@@ -89,7 +89,7 @@ client.on('ready', () => {
 client.on('message', async message => {
   try {
     if (message.author.bot) { return }  // no bots
-    if (message.channel.id !== config.testnetChannel) {
+    if (message.channel.id !== config.dustChannel) {
       return
     }
 

@@ -61,7 +61,7 @@ exports.dustEm = async function(args, message) {
   const today = new Date()
   if (discordIds[message.author.id] !== undefined) {
     if (today.getDate() <= discordIds[message.author.id].getDate() && today.getMonth() <= discordIds[message.author.id].getMonth()) {
-      message.channel.send(`https://tenor.com/view/robert-deniro-meet-the-fockers-point-looking-at-you-im-watching-you-gif-5145428`).then(msg => {utils.deleteMsgAfterDelay(msg, 10000)})
+      message.channel.send(`https://tenor.com/view/robert-deniro-meet-the-fockers-point-looking-at-you-im-watching-you-gif-5145428`).then(msg => {utils.deleteMsgAfterDelay(msg, 7500)})
       message.channel.send({embed: { color: c.FAIL_COL, description: `You can only be dusted once a day. Don't be greedy <@${message.author.id}>`}})
       return
     }
@@ -88,7 +88,7 @@ exports.dustEm = async function(args, message) {
     } else {
       console.log("success!")
       console.log(hash)
-      message.channel.send(`https://tenor.com/view/magic-dust-salt-bae-meme-sprinkle-gif-16676000`).then(msg => {utils.deleteMsgAfterDelay(msg, 10000)})
+      message.channel.send(`https://tenor.com/view/magic-dust-salt-bae-meme-sprinkle-gif-16676000`).then(msg => {utils.deleteMsgAfterDelay(msg, 7500)})
       message.channel.send({embed: { color: c.SUCCESS_COL, description: `Magical SYS dust sent to <@${message.author.id}>!\n [Explorer](https://explorer.syscoin.org/tx/${hash})`}})
       discordIds[message.author.id] = new Date()
     }
