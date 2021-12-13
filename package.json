@@ -1,0 +1,22 @@
+{
+  "name": "SysBot",
+  "version": "1.1.0",
+  "description": "Syscoin-based Discord bot",
+  "main": "server.js",
+  "author": "jg, giveaways.js by alternating",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.0",
+    "abi-decoder": "^2.4.0",
+    "axios": "^0.21.4",
+    "bignumber.js": "^9.0.1",
+    "ccxt": "^1.63.47",
+    "discord-paginationembed": "^2.1.0",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "sharp": "^0.28.1",
+    "utf8": "^3.0.0",
+    "web3": "^1.6.1"
+  }
+}
